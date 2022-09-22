@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Тюрина](https://up.htmlacademy.ru/htmlcss/35/user/216466).
-* Наставник: `Неизвестно`.
+* Наставник: `Татьяна Симоненко (https://htmlacademy.ru/profile/tatien)`.
 
 ---
 
