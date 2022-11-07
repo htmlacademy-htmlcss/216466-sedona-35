@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Седона</title>
 </head>
 
 <body>
     <!-- Шапка -->
     <header class="page-header">
-        <img class="navigation-logo" src="images/logo.svg" alt="Логотип Sedona">
         <!-- Навигация -->
         <nav class="navigation">
+            <a class="navigation-logo" href="index.html"><img class="logo-header" src="images/logo.svg" alt="Логотип Sedona"></a>
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-link" href="index.html">Главная</a>
@@ -23,21 +24,21 @@
                     <a class="navigation-link" href="hotels.html">Гостиницы</a>
                 </li>
             </ul>
-            <ul class="navigation-user">
+            <ul class="navigation-user-list">
                 <li class="navigation-user-item">
                     <a class="navigation-user-link" href="#">
                         <span class="visually-hidden">Поиск</span>
-                        <img src="images/icons/search.svg" alt="Поиск">
+                        <img class="icon-search" src="images/icons/search.svg" alt="Поиск">
                     </a>
                 </li>
                 <li class="navigation-user-item">
                     <a class="navigation-user-link" href="#">
                         <span class="visually-hidden">Избранное</span>
-                        <img src="images/icons/favourites.svg" alt="Избранное">
+                        <img class="icon-favourites" src="images/icons/favourites.svg" alt="Избранное">
                     </a>
                 </li>
                 <li class="navigation-user-item">
-                    <a class="navigation-user-link" href="#">Хочу сюда!</a>
+                    <a class="navigation-user-link navigation-user-button" href="#">Хочу сюда!</a>
                 </li>
             </ul>
         </nav>
@@ -62,23 +63,25 @@
                     <a class="breadcrumbs-link" href="#">Гостиницы</a>
                 </li>
             </ul>
-            <form class="infrastructure" action="#">
-                <p class="infrastructure-title">Инфраструктура:</p>
-                <p><input name="infrastructure-item" type="checkbox" value="pool" checked>Бассейн</p>
-                <p><input name="infrastructure-item" type="checkbox" value="parking" checked>Парковка</p>
-                <p><input name="infrastructure-item" type="checkbox" value="wifi">Wi-Fi</p>
-            </form>
+            <div class="catalog-forms">
+                <form class="infrastructure" action="#">
+                    <p class="infrastructure-title">Инфраструктура:</p>
+                    <p><input name="infrastructure-item" type="checkbox" value="pool" checked>Бассейн</p>
+                    <p><input name="infrastructure-item" type="checkbox" value="parking" checked>Парковка</p>
+                    <p><input name="infrastructure-item" type="checkbox" value="wifi">Wi-Fi</p>
+                </form>
 
-            <form class="home-type-form" action="#">
-                <p class="home-type-title">Тип жилья:</p>
-                <p><input name="home-type-item" type="radio" value="hotel" checked> Гостиница</p>
-                <p><input name="home-type-item" type="radio" value="motel"> Мотель</p>
-                <p><input name="home-type-item" type="radio" value="apartments"> Апартаменты</p>
-            </form>
+                <form class="home-type-form" action="#">
+                    <p class="home-type-title">Тип жилья:</p>
+                    <p><input name="home-type-item" type="radio" value="hotel" checked> Гостиница</p>
+                    <p><input name="home-type-item" type="radio" value="motel"> Мотель</p>
+                    <p><input name="home-type-item" type="radio" value="apartments"> Апартаменты</p>
+                </form>
+            </div>
         </section>
         <!-- Каталог -->
         <section>
-            <h2 class="">Найдено гостиниц: 38</h2>
+            <h2 class="search-title">Найдено гостиниц: 38</h2>
             <ul class="hotel-card">
                 <li class="hotel-card-list">
                     <a class="hotel-card-link" href="#">
@@ -87,7 +90,7 @@
                     </a>
                     <span class="hotel-card-type">Гостиница</span>
                     <span class="hotel-card-price">От 4000 ₽</span>
-                    <a class="button-catalog button-more" href="#">Купить</a>
+                    <a class="button-catalog button-more" href="#">Подробнее</a>
                     <a class="button-catalog button-favorite" href="#">в избранное</a>
                     <ul class="hotel-rang">
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
@@ -95,7 +98,7 @@
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                     </ul>
-                    <span class="button-catalog button-rang">Рейтинг: 8,5</span>
+                    <span class="hotel-rang-text">Рейтинг: 8,5</span>
                 </li>
 
                 <li class="hotel-card-list">
@@ -105,7 +108,7 @@
                     </a>
                     <span class="hotel-card-type">Гостиница</span>
                     <span class="hotel-card-price">От 5000 ₽</span>
-                    <a class="button-catalog button-more" href="#">Купить</a>
+                    <a class="button-catalog button-more" href="#">Подробнее</a>
                     <a class="button-catalog button-favorite" href="#">в избранное</a>
                     <ul class="hotel-rang">
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
@@ -113,7 +116,7 @@
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                     </ul>
-                    <span class="button-catalog button-rang">Рейтинг: 9,2</span>
+                    <span class="hotel-rang-text">Рейтинг: 9,2</span>
                 </li>
 
                 <li class="hotel-card-list">
@@ -123,14 +126,14 @@
                     </a>
                     <span class="hotel-card-type">Гостиница</span>
                     <span class="hotel-card-price">От 2500 ₽</span>
-                    <a class="button-catalog button-more" href="#">Купить</a>
+                    <a class="button-catalog button-more" href="#">Подробнее</a>
                     <a class="button-catalog button-favorite" href="#">в избранное</a>
                     <ul class="hotel-rang">
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                     </ul>
-                    <span class="button-catalog button-rang">Рейтинг: 6,9</span>
+                    <span class="hotel-rang-text">Рейтинг: 6,9</span>
                 </li>
                 <li class="hotel-card-list">
                     <a class="hotel-card-link" href="#">
@@ -139,19 +142,19 @@
                     </a>
                     <span class="hotel-card-type">Гостиница</span>
                     <span class="hotel-card-price">От 1500 ₽</span>
-                    <a class="button-catalog button-more" href="#">Купить</a>
+                    <a class="button-catalog button-more" href="#">Подробнее</a>
                     <a class="button-catalog button-favorite" href="#">в избранное</a>
                     <ul class="hotel-rang">
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                         <li class="hotel-rang-item"><img src="images/icons/rang-star.svg" alt="Рейтинг"></li>
                     </ul>
-                    <span class="button-catalog button-rang">Рейтинг: 5,0</span>
+                    <span class="hotel-rang-text">Рейтинг: 5,0</span>
                 </li>
             </ul>
             <div class="pagination">
                 <ul class="pagination-list">
-                    <li class="pagination-item pagination-item-active">
-                        <a class="pagination-link">1</a>
+                    <li class="pagination-item ">
+                        <a class="pagination-link pagination-link-active">1</a>
                     </li>
                     <li class="pagination-item">
                         <a class="pagination-link" href="#">2</a>
@@ -172,9 +175,9 @@
             </div>
         </section>
         <!-- Подписка -->
-        <section class="subscription">
-            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-            <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="subscription subscription-catalog">
+            <h2 class="subscription-title subscription-title-catalog">Подпишитесь на рассылку</h2>
+            <p class="subscription-subtitle subscription-subtitle-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
                 <label for="email">
                 <span class="visually-hidden">Введите ваш e-mail</span>
@@ -185,29 +188,25 @@
         </section>
         <!-- Подвал -->
         <section class="page-footer">
-            <ul class="contacts-list">
-                <li class="contacts-item">
+            <ul class="social-list">
+                <li class="social-item">
                     <span class="visually-hidden">Vkontakte</span>
                     <a href="https://vk.com/htmlacademy"><img src="images/icons/Vkontakte.svg" alt="Vkontakte"></a>
                 </li>
-                <li class="contacts-item">
+                <li class="social-item">
                     <span class="visually-hidden">Telegram</span>
                     <a href="https://t.me/htmlacademy"><img src="images/icons/Telegram.svg" alt="Telegram"></a>
                 </li>
-                <li class="contacts-item">
+                <li class="social-item">
                     <span class="visually-hidden"> Youtube</span>
                     <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/icons/Youtube.svg" alt="Youtube"></a>
                 </li>
             </ul>
-            <div class="">
-                <li class="contacts-item">
-                    <span class="visually-hidden">Телефон</span>
-                    <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-                </li>
-                <li class="contacts-item">
-                    <span class="visually-hidden">Логотип HTML Academy</span>
-                    <a href="https://htmlacademy.ru/"><img src="images/HTML_Academy.svg" alt="Логотип HTML Academy"></a>
-                </li>
+            <div class="contacts">
+                <span class="visually-hidden">Телефон</span>
+                <a class="contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <span class="visually-hidden">Логотип HTML Academy</span>
+                <a class="logo-academy" href="https://htmlacademy.ru/"><img src="images/HTML_Academy.svg" alt="Логотип HTML Academy"></a>
             </div>
         </section>
     </main>
