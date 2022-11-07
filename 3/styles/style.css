@@ -515,6 +515,29 @@ h2 {
     margin-right: 20px;
 }
 
+.button-catalog {
+    margin-top: 16px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.button-more {
+    background-color: #756157;
+    border-radius: 4px;
+    padding: 8px 26px;
+}
+
+.button-favorite {
+    background-color: #82B3D3;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
 .hotel-rang {
     display: flex;
     margin-left: 20px;
@@ -533,7 +556,6 @@ h2 {
 }
 
 .pagination {
-    margin-top: 40px;
     margin-left: 70px;
     border-top: 1px solid #E6E6E6;
     margin-bottom: 60px;
